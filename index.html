@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100d18">
+  <title>Afterlife TCG — The Collection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-view="home" aria-label="Afterlife TCG home"><span class="brand-mark">✦</span><span>AFTERLIFE <b>TCG</b></span></button>
+      <div class="top-status"><span class="format-pill" id="activeFormat">EXPANDED · NORMAL</span><span class="wallet">◈ <b id="cash">2,500</b></span><button class="avatar" aria-label="Player profile">A</button></div>
+    </header>
+    <main id="mainContent"></main>
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button data-view="home" class="nav-item active"><span>⌂</span>Home</button>
+      <button data-view="shop" class="nav-item"><span>♧</span>Shop</button>
+      <button data-view="deck" class="nav-item"><span>▤</span>Decks</button>
+      <button data-view="collection" class="nav-item"><span>✧</span>Cards</button>
+      <button data-view="battle" class="nav-item"><span>⚔</span>Battle</button>
+    </nav>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
