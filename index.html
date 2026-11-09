@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101114">
+  <title>Oddworld Showdown — Card Battler</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-view="lobby" aria-label="Go to lobby"><span class="brand-mark">✦</span><span>ODDWORLD <b>SHOWDOWN</b><small>FANDOM CARD BATTLES</small></span></button>
+      <div class="top-status"><span class="coin">✦ <b id="gold-count">240</b></span><button class="icon-btn" id="sound-toggle" aria-label="Toggle sound">♫</button><button class="avatar-btn" data-view="collection">R</button></div>
+    </header>
+    <div class="layout">
+      <aside class="sidebar" aria-label="Main navigation">
+        <p class="nav-label">PLAY</p>
+        <button class="nav-item active" data-view="lobby"><span>⌂</span> Lobby</button>
+        <button class="nav-item" data-view="battle"><span>⚔</span> Battle <i class="live-dot"></i></button>
+        <p class="nav-label">CARDS</p>
+        <button class="nav-item" data-view="collection"><span>▤</span> Collection</button>
+        <button class="nav-item" data-view="decks"><span>▣</span> Deck builder</button>
+        <button class="nav-item" data-view="shop"><span>♙</span> Shop <em>NEW</em></button>
+        <div class="side-bottom"><div class="season-card"><div class="season-flare">✦</div><small>FIRST EDITION</small><strong>Chaos<br>Awakens</strong><div class="season-progress"><span></span></div><small>STARTER SET · 12 CARDS</small></div><div class="profile"><div class="profile-pic">R</div><div><b>Rookie</b><small>Level 01</small></div><span class="profile-more">···</span></div></div>
+      </aside>
+      <main id="main-content" tabindex="-1"></main>
+    </div>
+    <nav class="mobile-nav"><button class="active" data-view="lobby"><span>⌂</span>Home</button><button data-view="collection"><span>▤</span>Cards</button><button data-view="battle"><span>⚔</span>Battle</button><button data-view="decks"><span>▣</span>Decks</button><button data-view="shop"><span>♙</span>Shop</button></nav>
+    <div id="modal-root"></div>
+    <div id="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
